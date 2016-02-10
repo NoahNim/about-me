@@ -36,7 +36,7 @@ if (answer2.toLowerCase() === 'n' || answer2.toUpperCase() === 'N'){
   console.log('did not use a valid answer the code ran');
 }
 
-var answer3 = prompt('Does Noah play guitar');
+var answer3 = prompt('Does Noah play guitar?');
 
 if (answer3.toLowerCase() === 'n' || answer3.toUpperCase() === 'N'){
   alert('Wrong I DO PLAY! Why do you hate me? D: D: D: :( ;_;');
@@ -102,4 +102,4 @@ while (guesses < 3){
   }
 }
 
-alert('That game is over! You got ' +  correctTally + ' out of 6 questions right!')
+alert('That game is over! You got ' +  correctTally + ' out of 6 questions right!');

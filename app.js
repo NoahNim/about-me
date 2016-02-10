@@ -79,9 +79,15 @@ while (guesses < 3){
     alert('That is right! You can read!');
     console.log('Answered correctly while loop should end');
     guesses = 3
-  } else {
-    alert('WRONG! Guess again!');
-    guesses++
+  } else if (answer6 < theanswer){
+    alert('WRONG! Guess again! Too low!');
+    guesses + 1
     console.log(guesses + ' guess used');
+    answer6 = parseInt(prompt('How old am I? You have three guesses', "0"));
+  } else {
+    alert('WRONG! Guess again! Too high!');
+    guesses + 1
+    console.log(guesses + ' guess used');
+    answer6 = parseInt(prompt('How old am I? You have three guesses', "0"));
   }
 }

@@ -1,4 +1,4 @@
-JS file for Feb 9 class demo
+// JS day 2 hw
 
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);

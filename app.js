@@ -4,7 +4,7 @@ var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);
 var correctTally = 0
 
-alert("Hi there, " + userName + "I'm going to ask you some questions about some questions about me please answer Y or N.");
+alert('Hi there, ' + userName + 'I\m going to ask you some questions about some questions about me please answer Y or N.')
 
 var answer1 = prompt('Was Noah born in Maryland?');
 
@@ -84,7 +84,7 @@ if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N'){
 var guesses = 0;
 
 while (guesses < 3){
-  var answer6 = parseInt(prompt('How old am I? You have three guesses', "0"))
+  var answer6 = parseInt(prompt('How old am I? You have three guesses', '0'))
   if (answer6 === 25){
     alert('That is right! You can read!');
     console.log('Answered correctly while loop should end');
@@ -95,11 +95,11 @@ while (guesses < 3){
     guesses += 1
     alert('WRONG! Guess again! Too high!');
     console.log(guesses + ' guess used');
-  }  else {
+  } else {
     guesses += 1
     alert('Wrong! Too low!');
     console.log(guesses + ' guess used');
   }
 }
 
-alert('That game is over! You got ' +  correctTally + ' out of 6 questions right!');
+alert('That game is over! You got ' + correctTally + ' out of 6 questions right!');

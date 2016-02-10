@@ -1,4 +1,4 @@
-// JS file for Feb 9 class demo
+JS file for Feb 9 class demo
 
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);
@@ -70,24 +70,21 @@ if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N'){
   console.log('did not use a valid answer the code ran');
 }
 
-var answer6 = parseInt(prompt('How old am I? You have three guesses', "0"));
 var guesses = 0;
-var theanswer = 25
 
 while (guesses < 3){
-  if (answer6 === theanswer){
+  var answer6 = parseInt(prompt('How old am I? You have four guesses', "0"))
+  if (answer6 === 25){
     alert('That is right! You can read!');
     console.log('Answered correctly while loop should end');
     guesses = 3
-  } else if (answer6 < theanswer){
-    alert('WRONG! Guess again! Too low!');
-    guesses + 1
-    console.log(guesses + ' guess used');
-    answer6 = parseInt(prompt('How old am I? You have three guesses', "0"));
-  } else {
+  } else if (answer6 > 25){
+    guesses += 1
     alert('WRONG! Guess again! Too high!');
-    guesses + 1
     console.log(guesses + ' guess used');
-    answer6 = parseInt(prompt('How old am I? You have three guesses', "0"));
+  }  else {
+    guesses += 1
+    alert('Wrong! Too low!');
+    console.log(guesses + ' guess used');
   }
 }

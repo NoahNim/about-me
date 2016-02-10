@@ -70,9 +70,9 @@ if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N'){
   console.log('did not use a valid answer the code ran');
 }
 
-var answer6 = prompt('How old am I? You have three guesses');
+var answer6 = parseInt(prompt('How old am I? You have three guesses', "0"));
 var guesses = 0;
-var theanswer = '25';
+var theanswer = 25
 
 while (guesses < 3){
   if (answer6 === theanswer){

@@ -1,10 +1,11 @@
-// JS day 2 hw
+// JS week 1 lab and hw stuff
 
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);
 var correctTally = 0
+console.log(correctTally + ' questions answered correctly!')
 
-alert('Hi there, ' + userName + 'I\m going to ask you some questions about some questions about me please answer Y or N.')
+alert('Hi there, ' + userName + ' I\'m going to ask you some questions about some questions about me please answer Y or N.')
 
 var answer1 = prompt('Was Noah born in Maryland?');
 
@@ -83,15 +84,15 @@ if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N'){
 
 var guesses = 0;
 
-while (guesses < 3){
-  var answer6 = parseInt(prompt('How old am I? You have three guesses'));
+while (guesses < 4){
+  var answer6 = parseInt(prompt('How old am I? You have four guesses'));
   console.log(answer6)
   if (answer6 === 25){
     alert('That is right! You can read!');
     console.log('Answered correctly while loop should end');
     correctTally += 1
     console.log(correctTally + ' questions right');
-    guesses = 3
+    guesses = 4
   } else if (answer6 > 25){
     guesses += 1
     alert('WRONG! Guess again! Too high!');
@@ -110,4 +111,28 @@ while (guesses < 3){
   }
 }
 
-alert('That game is over! You got ' + correctTally + ' out of 6 questions right!');
+var favThings = ['Guitar', 'Conquest', 'Coding', 'Love' ]
+var favanswer = prompt('What is one of my favorite things? YOU HAVE ONE GUESS USE IT WISELY! Use correct punctuation for these answers or you\'ll be wrong I am a stickler')
+var favThingsRight = false;
+
+for (var i = 0; i < favThings.length; i++) {
+  if (favanswer === favThings[i]) {
+    favThingsRight = true
+    i = 4
+  }
+  console.log('The for loop has run successfully');
+}
+
+if (favThingsRight === true) {
+  alert('You were right! YAAAY!');
+  correctTally += 1
+  console.log(correctTally + ' questions right');
+} else {
+  alert('You were wrong!');
+}
+
+if (correctTally >= 5) {
+  alert('That game is over! You got ' + correctTally + ' out of 7 questions right!  Wow! ' + userName + '! Your parents must be proud of you!');
+} else {
+  alert('The game is over...You got ' + correctTally + ' out of 7 questions right. ' + userName + ', you suck. Did you even get past kindergarten?' )
+}

@@ -1,4 +1,4 @@
-// JS day 2 hw
+// JS week 1 lab and hw stuff
 
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);
@@ -111,8 +111,26 @@ while (guesses < 3){
   }
 }
 
-if (correctTally >= 4) {
-  alert('That game is over! You got ' + correctTally + ' out of 6 questions right!  Wow! ' + userName + '! Your parents must be proud of you!');
+var favThings = ['Guitar', 'Conquest', 'Coding', 'Love' ]
+var favanswer = prompt('What is one of my favorite things? YOU HAVE ONE GUESS USE IT WISELY')
+var favThingsRight = false
+
+for (var i = 0; i < favThings.length; i++) {
+  if (favanswer === favThings[i]) {
+    favThingsRight = true
+    i = 4
+  }
+  console.log('The for loop has run successfully')
+}
+
+if (favThingsRight === true) {
+  alert('You were right! YAAAY!')
 } else {
-  alert('The game is over...You got ' + correctTally + ' out of 6 questions right. ' + userName + ', you suck. Did you even get past kindergarten?' )
+  alert('You were wrong!')
+}
+
+if (correctTally >= 5) {
+  alert('That game is over! You got ' + correctTally + ' out of 7 questions right!  Wow! ' + userName + '! Your parents must be proud of you!');
+} else {
+  alert('The game is over...You got ' + correctTally + ' out of 7 questions right. ' + userName + ', you suck. Did you even get past kindergarten?' )
 }

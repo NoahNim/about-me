@@ -5,7 +5,7 @@ console.log('The user said their name is ' + userName);
 var correctTally = 0
 console.log(correctTally + ' questions answered correctly!')
 
-alert('Hi there, ' + userName + ' I\m going to ask you some questions about some questions about me please answer Y or N.')
+alert('Hi there, ' + userName + ' I\'m going to ask you some questions about some questions about me please answer Y or N.')
 
 var answer1 = prompt('Was Noah born in Maryland?');
 
@@ -112,7 +112,7 @@ while (guesses < 3){
 }
 
 var favThings = ['Guitar', 'Conquest', 'Coding', 'Love' ]
-var favanswer = prompt('What is one of my favorite things? YOU HAVE ONE GUESS USE IT WISELY')
+var favanswer = prompt('What is one of my favorite things? YOU HAVE ONE GUESS USE IT WISELY! Use correct punctuation for these answers or you\'ll be wrong I am a stickler')
 var favThingsRight = false
 
 for (var i = 0; i < favThings.length; i++) {

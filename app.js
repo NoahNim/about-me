@@ -84,7 +84,8 @@ if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N'){
 var guesses = 0;
 
 while (guesses < 3){
-  var answer6 = parseInt(prompt('How old am I? You have three guesses', '0'))
+  var answer6 = parseInt(prompt('How old am I? You have three guesses'));
+  console.log(answer6)
   if (answer6 === 25){
     alert('That is right! You can read!');
     console.log('Answered correctly while loop should end');
@@ -94,12 +95,26 @@ while (guesses < 3){
   } else if (answer6 > 25){
     guesses += 1
     alert('WRONG! Guess again! Too high!');
-    console.log(guesses + ' guess used');
-  } else {
+    console.log(guesses + ' guesses used');
+  } else if (answer6 < 25) {
     guesses += 1
     alert('Wrong! Too low!');
-    console.log(guesses + ' guess used');
+    console.log(guesses + ' guesses used');
+  } else if (typeof(answer6 === 'number')) {
+    guesses += 1
+    alert('ENTER A NUMBER! WTF IS WRONG WITH YOU IN MY OPINION THE JEDI ARE WRONG I HATE SAND!!!');
+    console.log('did not enter a number this code ran');
+    console.log(guesses + ' gusses used')
+  } else {
+    alert('WTF YOU BROKW IT!')
   }
 }
 
+if (guesses === 3) {
+  alert('YOU RAN OUT OF GUESESS GAME OVER')
+}
+
 alert('That game is over! You got ' + correctTally + ' out of 6 questions right!');
+
+// else if (typeof(answer6 === 'number')) {
+//   alert('enter a NUMBER!!!! WTF IS WRONG WITH YOU AHHH IN MY OPINION THE JEDI ARE WRONG BECAUSE I HATE SAND')}

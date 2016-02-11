@@ -84,15 +84,15 @@ if (answer5.toLowerCase() === 'n' || answer5.toUpperCase() === 'N'){
 
 var guesses = 0;
 
-while (guesses < 3){
-  var answer6 = parseInt(prompt('How old am I? You have three guesses'));
+while (guesses < 4){
+  var answer6 = parseInt(prompt('How old am I? You have four guesses'));
   console.log(answer6)
   if (answer6 === 25){
     alert('That is right! You can read!');
     console.log('Answered correctly while loop should end');
     correctTally += 1
     console.log(correctTally + ' questions right');
-    guesses = 3
+    guesses = 4
   } else if (answer6 > 25){
     guesses += 1
     alert('WRONG! Guess again! Too high!');

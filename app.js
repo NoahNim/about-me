@@ -5,7 +5,7 @@ console.log('The user said their name is ' + userName);
 var correctTally = 0
 console.log(correctTally + ' questions answered correctly!')
 
-alert('Hi there, ' + userName + 'I\m going to ask you some questions about some questions about me please answer Y or N.')
+alert('Hi there, ' + userName + ' I\m going to ask you some questions about some questions about me please answer Y or N.')
 
 var answer1 = prompt('Was Noah born in Maryland?');
 
@@ -125,6 +125,7 @@ for (var i = 0; i < favThings.length; i++) {
 
 if (favThingsRight === true) {
   alert('You were right! YAAAY!')
+  correctTally += 1
 } else {
   alert('You were wrong!')
 }

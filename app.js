@@ -3,6 +3,7 @@
 var userName = prompt('What is your name?');
 console.log('The user said their name is ' + userName);
 var correctTally = 0
+console.log(correctTally + ' questions answered correctly!')
 
 alert('Hi there, ' + userName + 'I\m going to ask you some questions about some questions about me please answer Y or N.')
 
@@ -110,4 +111,8 @@ while (guesses < 3){
   }
 }
 
-alert('That game is over! You got ' + correctTally + ' out of 6 questions right!');
+if (correctTally >= 4) {
+  alert('That game is over! You got ' + correctTally + ' out of 6 questions right!  Wow! ' + userName + '! Your parents must be proud of you!');
+} else {
+  alert('The game is over...You got ' + correctTally + ' out of 6 questions right. ' + userName + ', you suck. Did you even get past kindergarten?' )
+}

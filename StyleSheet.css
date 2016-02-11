@@ -1,6 +1,6 @@
 
 BODY {
-  background-color: #75FED5;
+  background: linear-gradient(#CEF6F5, #A9F5F2);
 }
 #name {
   color: #FFFFFF;
@@ -14,6 +14,9 @@ BODY {
 }
 #bands {
   background-color: #000000;
+  margin-left: -10px;
+  margin-right: 0px;
+  margin-top: -16px
 }
 #bandlist {
   background: linear-gradient(#A4A4A4, #848484);
@@ -26,9 +29,14 @@ BODY {
   margin-top: -19px;
 }
 H2 {
+  margin-left: -10px;
+  margin-right: 0px;
   color: #fe9128;
   background: linear-gradient(#0080FF, #5882FA);
+  margin-top: -17px
 }
 H3 {
   background: linear-gradient(#0080FF, #5882FA);
+  margin-left: -10px;
+  margin-right: 0px;
 }

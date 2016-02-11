@@ -110,8 +110,4 @@ while (guesses < 3){
   }
 }
 
-if (guesses === 3) {
-  alert('YOU RAN OUT OF GUESESS GAME OVER')
-}
-
 alert('That game is over! You got ' + correctTally + ' out of 6 questions right!');

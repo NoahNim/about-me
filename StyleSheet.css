@@ -28,7 +28,20 @@ BODY {
 H2 {
   color: #fe9128;
   background: linear-gradient(#0080FF, #5882FA);
+  margin-top: -19px;
 }
 H3 {
   background: linear-gradient(#0080FF, #5882FA);
+  margin-top: -19px;
+}
+P {
+  background: linear-gradient(#ACFA58, #74DF00);
+}
+UL {
+  background: linear-gradient(#ACFA58, #74DF00);
+  margin-top: -15px;
+}
+OL {
+  background: linear-gradient(#ACFA58, #74DF00);
+  margin-top: -15px;
 }

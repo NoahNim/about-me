@@ -27,8 +27,8 @@ BODY {
 }
 H2 {
   color: #fe9128;
-  background-color: #F4FA58
+  background: linear-gradient(#0080FF, #5882FA);
 }
 H3 {
-  color: #36648b;
+  background: linear-gradient(#0080FF, #5882FA);
 }

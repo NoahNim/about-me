@@ -115,6 +115,3 @@ if (guesses === 3) {
 }
 
 alert('That game is over! You got ' + correctTally + ' out of 6 questions right!');
-
-// else if (typeof(answer6 === 'number')) {
-//   alert('enter a NUMBER!!!! WTF IS WRONG WITH YOU AHHH IN MY OPINION THE JEDI ARE WRONG BECAUSE I HATE SAND')}

@@ -113,21 +113,22 @@ while (guesses < 4){
 
 var favThings = ['Guitar', 'Conquest', 'Coding', 'Love' ]
 var favanswer = prompt('What is one of my favorite things? YOU HAVE ONE GUESS USE IT WISELY! Use correct punctuation for these answers or you\'ll be wrong I am a stickler')
-var favThingsRight = false
+var favThingsRight = false;
 
 for (var i = 0; i < favThings.length; i++) {
   if (favanswer === favThings[i]) {
     favThingsRight = true
     i = 4
   }
-  console.log('The for loop has run successfully')
+  console.log('The for loop has run successfully');
 }
 
 if (favThingsRight === true) {
-  alert('You were right! YAAAY!')
+  alert('You were right! YAAAY!');
   correctTally += 1
+  console.log(correctTally + ' questions right');
 } else {
-  alert('You were wrong!')
+  alert('You were wrong!');
 }
 
 if (correctTally >= 5) {

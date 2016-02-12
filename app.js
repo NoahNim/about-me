@@ -101,7 +101,7 @@ while (guesses < 4){
     guesses += 1
     alert('Wrong! Too low!');
     console.log(guesses + ' guesses used');
-  } else if (typeof(answer6 === 'number')) {
+  } else if (typeof(answer6) === 'number') {
     guesses += 1
     alert('ENTER A NUMBER! WTF IS WRONG WITH YOU IN MY OPINION THE JEDI ARE WRONG I HATE SAND!!!');
     console.log('did not enter a number this code ran');
